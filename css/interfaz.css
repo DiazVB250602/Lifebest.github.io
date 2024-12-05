@@ -1,0 +1,85 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #f7f333;
+    color: #f84aa1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header img {
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.header h1 {
+    display: inline;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+}
+
+/* Imagen */
+.image-container {
+    flex: 1;
+    text-align: center;
+    margin: 50px;
+}
+
+.image-container img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.button-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container .button {
+    background-color: #f7f333; /* Verde pastel */
+    color: #f84aa1;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 10px;
+    border: 2px solid #f7f333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button-container .button:hover {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #333;
+}

@@ -1,0 +1,133 @@
+/* Contenedor general */
+.container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 100px;
+    background: linear-gradient(135deg, #f84aa1, #f87963, #bb59fd);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilos del encabezado */
+.header {
+    margin-bottom: 30px;
+}
+
+.logo-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 30px;
+}
+
+/* Título del encabezado */
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilos del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #f7f333;
+}
+
+input[type="email"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #f7f333;
+    color: #f84aa1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7b1fa2;
+}
+
+/* Estilo del mensaje de error */
+#error-message {
+    color: red;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Estilo para el mensaje de registro */
+.register-message {
+    margin-top: 20px;
+}
+
+.register-message p {
+    font-size: 14px;
+}
+
+.register-message a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-message a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Botón flotante de regresar */
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 96.5%;
+    text-align: center;
+}
+
+.footer button {
+    background-color: #f7f333;
+    color: #f84aa1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #7b1fa2;
+}
